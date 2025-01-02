@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Romin Patel - Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #0a192f;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        overflow-x: hidden;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        background-color: #112240;
+        padding: 0 20px;
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+      nav ul li {
+        margin: 0 15px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+        transition: color 0.3s ease;
+      }
+      nav ul li a:hover {
+        color: #64ffda;
+      }
+      main {
+        padding: 40px 20px;
+        text-align: center;
+      }
+      .section-title {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #64ffda;
+      }
+      .about-img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+      .about-text {
+        font-size: 1.2rem;
+        color: #e0e0e0;
+        margin-bottom: 30px;
+      }
+      .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 40px;
+      }
+      .skill-card {
+        background-color: #112240;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 10px;
+        width: 200px;
+        text-align: center;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+      }
+      .skill-card img {
+        width: 80%;
+        height: 100px;
+        object-fit: contain;
+        margin-bottom: 10px;
+      }
+      footer {
+        background-color: #112240;
+        padding: 20px 0;
+        text-align: center;
+        margin-top: 40px;
+      }
+      footer a {
+        text-decoration: none;
+        color: #64ffda;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>Romin Patel</div>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- About Me Section -->
+      <section id="about">
+        <h1 class="section-title">About Me</h1>
+        <img src="romin.jpg" alt="Romin Patel" class="about-img" />
+        <p class="about-text">
+          Hi! I'm Romin Patel, a second-year undergraduate student passionate
+          about programming, web development, and machine learning. I enjoy
+          solving problems through code and have participated in several
+          hackathons and university projects. Currently, I'm looking for
+          opportunities to expand my knowledge and grow in the tech field.
+        </p>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills">
+        <h1 class="section-title">Skills</h1>
+        <div class="skills-container">
+          <div class="skill-card">
+            <img src="python.png" alt="Python" />
+            <h3>Python</h3>
+          </div>
+          <div class="skill-card">
+            <img src="java.png" alt="Java" />
+            <h3>Java</h3>
+          </div>
+          <div class="skill-card">
+            <img src="cpp.png" alt="C++" />
+            <h3>C++</h3>
+          </div>
+          <div class="skill-card">
+            <img src="javascript.png" alt="JavaScript" />
+            <h3>JavaScript</h3>
+          </div>
+          <div class="skill-card">
+            <img src="nodejs.jpeg" alt="Node.js" />
+            <h3>Node.js</h3>
+          </div>
+          <div class="skill-card">
+            <img src="mongodb.jpeg" alt="MongoDB" />
+            <h3>MongoDB</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects">
+        <h1 class="section-title">Projects</h1>
+        <p>
+          Here are a few of the projects I've worked on during my time at
+          university and in hackathons:
+        </p>
+        <br />
+        <ul>
+          <li>
+            <strong>Gamer Leaderboard</strong> - A real-time leaderboard
+            application built with Express.js, MongoDB, and WebSockets. It
+            allows players to update their scores and view real-time rankings.
+          </li>
+          <br />
+          <li>
+            <strong>Hackathon Projects</strong> - Collaborated in multiple
+            hackathons to develop innovative web apps within tight timeframes.
+          </li>
+          <br />
+          <li>
+            <strong>Data Structures & Algorithms</strong>- 1. Made a simple
+            calculator using having undo and redo features using LinkedList,
+            Stacks and queues.
+            <br />
+            2. Created a java simulation of “Mastermind", using List ADT and
+            positional Array Lists.
+          </li>
+        </ul>
+      </section>
+      <br>
+      <!-- Contact Section -->
+      <section id="contact">
+        <h1 class="section-title">Contact Me</h1>
+        <div class="contact-info">
+          <p><strong>Name:</strong> Romin Patel</p>
+          <p><strong>Email:</strong> <a href="mailto:romin.patel@email.com">romin.patel@email.com</a></p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Made by Romin Patel. Connect with me on
+        <a href="https://www.linkedin.com//in/rominp" target="_blank"
+          >LinkedIn</a
+        >
+        or check out my
+        <a href="https://github.com/romin-debug" target="_blank">GitHub</a>.
+      </p>
+    </footer>
+  </body>
+</html>
